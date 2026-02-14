@@ -105,6 +105,14 @@ function selectChoice(option) {
 
     document.getElementById("result").innerHTML = message;
     document.querySelector("button").style.display = "inline-block";
+    
+    setTimeout(() => {
+    document.getElementById("result").scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+}, 100);
+
 }
 
 function showBox(){
